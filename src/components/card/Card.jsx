@@ -5,12 +5,12 @@ function Card({ item }) {
   const navigate = useNavigate()
   return (
     <div className="card">
-      {/* <Link to={`/${item.id}`} className="imageContainer"> */}
+      <span className="imageContainer">
         <img src={item.images[0]} alt="" onClick={()=>navigate(`/${item.id}`)}/>
-      {/* </Link> */}
-      <div className="textContainer">
+      </span>
+      <div className="textContainer" onClick={()=>navigate(`/${item.id}`)}>
         <h2 className="title">
-          <Link to={`/${item.id}`}>{item.title}</Link>
+          <span >{item.title}</span>
         </h2>
         <p className="address">
           <img src="/pin.png" alt="" />
