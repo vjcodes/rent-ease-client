@@ -63,7 +63,7 @@ function Navbar() {
         <a href="/list">Rent</a>
         <a href="/list">Buy</a>
         <a href="/list">Sell</a>
-        <a href="/">Contact</a>
+        <a href="/contact">Contact</a>
         </div>
       </div>
     </nav>
