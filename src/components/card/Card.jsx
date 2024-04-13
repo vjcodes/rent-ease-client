@@ -4,7 +4,7 @@ import "./card.scss";
 function Card({ item }) {
   const navigate = useNavigate()
   return (
-    <div className="card">
+    <div className="card" onClick={()=>navigate(`/${item.id}`)}>
       <span className="imageContainer">
         <img src={item.images[0]} alt="" onClick={()=>navigate(`/${item.id}`)}/>
       </span>
