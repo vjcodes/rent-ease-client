@@ -11,7 +11,7 @@ function NewPostPage() {
   const [value, setValue] = useState("");
   const [images, setImages] = useState([]);
   const [error, setError] = useState("");
-  const currentUser = useContext(AuthContext);
+  const {currentUser} = useContext(AuthContext);
 
   const navigate = useNavigate()
 
