@@ -5,9 +5,9 @@ function Card({ item }) {
   const navigate = useNavigate()
   return (
     <div className="card">
-      <Link to={`/${item.id}`} className="imageContainer">
+      {/* <Link to={`/${item.id}`} className="imageContainer"> */}
         <img src={item.images[0]} alt="" onClick={()=>navigate(`/${item.id}`)}/>
-      </Link>
+      {/* </Link> */}
       <div className="textContainer">
         <h2 className="title">
           <Link to={`/${item.id}`}>{item.title}</Link>
